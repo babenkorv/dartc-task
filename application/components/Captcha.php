@@ -24,7 +24,7 @@ class Captcha
 
         self::$captcha = null;
 
-        if(file_exists($pathToImg)) {
+        if (file_exists($pathToImg)) {
             unlink($pathToImg);
         }
         self::$captchaImgName = null;
@@ -39,6 +39,8 @@ class Captcha
         for ($i = 0; $i < $stringLength; $i++) {
             $randomString .= $chars[rand(0, strlen($chars))];
         }
+
+        $_SESSION['captcha'] = md5(self::$captcha);
 
         return $randomString;
     }
@@ -84,5 +86,15 @@ class Captcha
     public static function getCaptchaImgName()
     {
         return self::$captchaImgName;
+    }
+
+    public static function checkCaptchaOnValid($userCaptcha)
+    {
+        $errorArray = [];
+        if ($_SESSION['captcha'] == md5($userCaptcha)) {
+           return true;
+        }
+
+        return false;
     }
 }

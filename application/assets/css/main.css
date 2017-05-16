@@ -17,3 +17,21 @@
     height: 34px;
     margin-top: -7px;
 }
+
+.status-form-message {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    display: none;
+}
+
+.status-form-message-close {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -40px;
+    right: 30px;
+
+}
