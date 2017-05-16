@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.centered-text {
+    display: block;
+    text-align: center;
+}
+
+.feedback-form {
+    background: rebeccapurple;
+}
+
+.captcha {
+    width: 100%;
+    height: 34px;
+    margin-top: -7px;
+}
