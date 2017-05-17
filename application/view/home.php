@@ -18,10 +18,10 @@
 <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-2">
-        <a class="text-uppercase centered-text" href="main/dashboards">dashboards</a>
+        <a class="text-uppercase centered-text" href="/main/dashboards">dashboards</a>
     </div>
     <div class="col-md-2">
-        <a class="text-uppercase centered-text" href="main/feedback">feedback form</a>
+        <a class="text-uppercase centered-text" href="/main/feedback">feedback form</a>
     </div>
     <div class="col-md-4"></div>
 </div>

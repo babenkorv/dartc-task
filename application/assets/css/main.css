@@ -33,5 +33,14 @@
     position: absolute;
     margin-top: -40px;
     right: 30px;
+}
 
+.filter {
+    margin-left: 60px;
+}
+
+#feedbackTable tr td,
+#feedbackTable tr th{
+    padding: 5px;
+    border: 1px solid;
 }
